@@ -29,28 +29,23 @@ export default function GameCard({
         ${selected ? "game-card-selected" : ""}
       `}
     >
-      {/* Multi-color border */}
+      {/* White border */}
       <div
-        className="
+        className={`
           pointer-events-none
           absolute
           inset-0
           rounded-2xl
-          bg-[linear-gradient(
-            90deg,
-            #ff0080,
-            #7928ca,
-            #00c6ff,
-            #00f5a0,
-            #ffdd00,
-            #ff0080
-          )]
-          bg-[length:300%_100%]
-          opacity-0
+          border
+          border-white
           transition-opacity
           duration-300
-          group-hover:opacity-100
-        "
+          ${
+            selected
+              ? "opacity-100"
+              : "opacity-0 group-hover:opacity-100"
+          }
+        `}
       />
 
       {/* Card */}
@@ -69,7 +64,6 @@ export default function GameCard({
           bg-[#111111]
           transition-all
           duration-300
-          group-hover:border-transparent
         "
       >
         {/* Image */}

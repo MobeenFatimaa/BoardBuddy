@@ -1,0 +1,44 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" rx="14" fill="#0a0a0a"/>
+
+  <rect
+    x="8"
+    y="8"
+    width="48"
+    height="48"
+    rx="12"
+    fill="#ffffff"
+  />
+
+  <!-- Chess Pawn -->
+  <circle cx="32" cy="21" r="7" fill="#0a0a0a"/>
+
+  <path
+    d="M25 29
+       C25 27 27 26 29 26
+       H35
+       C37 26 39 27 39 29
+       L37 37
+       H27
+       Z"
+    fill="#0a0a0a"
+  />
+
+  <path
+    d="M25 37
+       H39
+       L42 41
+       H22
+       Z"
+    fill="#0a0a0a"
+  />
+
+  <rect
+    x="20"
+    y="41"
+    width="24"
+    height="4"
+    rx="2"
+    fill="#0a0a0a"
+  />
+</svg>

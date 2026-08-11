@@ -5,7 +5,7 @@ import type { Game } from "@/data/games";
 import { games } from "@/data/games";
 import GameCard from "@/components/GameCard";
 import ChatPanel from "@/components/ChatPanel";
-
+import Footer from "@/components/Footer";
 export default function Home() {
   const [search, setSearch] = useState("");
   const [selectedGame, setSelectedGame] = useState<Game | null>(null);
@@ -27,7 +27,9 @@ export default function Home() {
   }, [search]);
 
   return (
-    <main className="min-h-screen bg-[#0a0a0a] text-white">
+ <>
+
+  <main className="min-h-screen bg-[#0a0a0a] text-white">
       {/* Header */}
       <header
         className="
@@ -307,6 +309,8 @@ export default function Home() {
           onClose={() => setSelectedGame(null)}
         />
       )}
-    </main>
-  );
+      </main>
+      <Footer />
+  </>
+);
 }
